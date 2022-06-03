@@ -7,6 +7,6 @@
 
 #include <stdio.h>
 
-char	*merge_args(char **argv);
+char	**merge_args(char **argv);
 
 #endif
