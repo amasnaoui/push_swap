@@ -28,9 +28,10 @@ int	check_is_number(char **ag)
 	while (tab[i])
 	{
 		j = 0;
-		while(tab[i][j])
+		while (tab[i][j])
 		{
-			if ((tab[i][j] == '-' && !ft_isdigit(tab[i][++j])) || !ft_isdigit(tab[i][j]))
+			if (((tab[i][j] == '-' || tab[i][j] == '+' ) && \
+				!ft_isdigit(tab[i][++j])) || !ft_isdigit(tab[i][j]))
 				return (0);
 			j++;
 		}
@@ -39,11 +40,31 @@ int	check_is_number(char **ag)
 	return (1);
 }
 
-int main(int ac, char **av)
+int check_max_min_int(char **ag)
 {
-	if(!check_is_number(av))
-		write(2, "Error\n", 6);
+	char	**tab;
+	int		i;
+	int		num;
+
+	i = 0;
+	num = 0;
+	tab = merge_args(ag);
+	while (tab[i])
+	{
+		num = ft_atoi(tab[i]);
+		if (num > 2147483647 || num < -2147483648)
+			return (0);
+		i++;
+	}
+	return (1);
+}
+
+int main	(int ac, char **av)
+{
+	(void)ac;
+	if (check_max_min_int(av))
+		printf("Yes ;)");
 	else
-		write(2, "True\n", 5);
+		printf("NO :(");
 	return (0);
 }
