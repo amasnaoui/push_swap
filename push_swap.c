@@ -1,4 +1,4 @@
-#include "pushswap.h"
+#include "push_swap.h"
 
 char	**merge_args(char **argv)
 {
@@ -59,10 +59,48 @@ int check_max_min_int(char **ag)
 	return (1);
 }
 
+int	ft_cmp(char *s1, char *s2)
+{
+	size_t	i;
+
+	i = 0;
+	while (s1[i] && s2[i])
+	{
+		if (s1[i] != s2[i])
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+		i++;
+	}
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+}
+
+
+int	ft_strstr_lite(char **haystack)
+{
+	int	i;
+	int	j;
+	char	*needle;
+
+	i = 0;
+	j = 0;
+	while (haystack[i])
+	{
+		needle = ft_strdup(haystack[i]);
+		j = i;
+		while (haystack[++j])
+		{
+			if (ft_cmp(needle, haystack[j]) == 0)
+				return (0);
+		}
+		i++;
+	}
+	return (1);
+}
+
+
 int main	(int ac, char **av)
 {
 	(void)ac;
-	if (check_max_min_int(av))
+	if (ft_strstr_lite(av))
 		printf("Yes ;)");
 	else
 		printf("NO :(");
