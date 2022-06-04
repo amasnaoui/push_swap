@@ -44,7 +44,7 @@ int check_max_min_int(char **ag)
 {
 	char	**tab;
 	int		i;
-	int		num;
+	long		num;
 
 	i = 0;
 	num = 0;
