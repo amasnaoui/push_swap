@@ -1,4 +1,4 @@
-SRCS    =	push_swap.c
+SRCS    =	push_swap.c check.c
 
 OBJS    =    $(SRCS:.c=.o)
 #BONUS    =

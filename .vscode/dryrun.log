@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/amasnaou/Desktop/push_swap'
+make -C libft
+cc -Wall -Wextra -Werror -c push_swap.c
+cc -Wall -Wextra -Werror -c check.c
+cc push_swap.o check.o libft/libft.a -o push_swap
+make: Leaving directory `/Users/amasnaou/Desktop/push_swap'
+ 
