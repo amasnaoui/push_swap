@@ -6,6 +6,10 @@ int	ft_is_valid(char c1, char c2)
 		return (1);
 	else if (ft_isdigit(c1) && c2 == '-')
 		return (1);
+	else if (c1 == '+' && (!ft_isdigit(c2)))
+		return (1);
+	else if (ft_isdigit(c1) && c2 == '+')
+		return (1);
 	return (0);
 }
 
