@@ -8,6 +8,7 @@ int main	(int ac, char **av)
 	int i = 0;
 
 	tab = merge_argvs(av);
+	// duplicated_value(av);
 	tab2 = ft_split(tab, ' ');
 	while (tab2[i])
 	{
