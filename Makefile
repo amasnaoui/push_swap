@@ -1,49 +1,11 @@
-# SRCS    =	SRC/push_swap.c SRC/check.c
-
-# OBJS    =    $(SRCS:.c=.o)
-# #BONUS    =
-# # BOBJS    =    $(BONUS:.c=.o)
-# HEADER    =    SRC/push_swap.h
-# NAME	=	SRC/push_swap
-# CC        =    cc
-# RM        =    rm -f
-# CFLAGS    =    -Wall -Wextra -Werror
-# LIB = libft/libft.a
-# # ----------------------------------------------------------------------------
-
-# all : $(NAME)
-
-# SRC/%.o : SRC/%.c $(HEADER)
-# 		$(CC) $(CFLAGS) -c $<
-
-# $(NAME) : $(LIB) $(OBJS)
-# 		$(CC) $(OBJS) $(LIB) -o SRC/$(NAME)
-
-# $(LIB) :
-# 		make -C libft
-
-# # bonus:		$(LIB) $(OBJS)
-# # 			$(CC) $(OBJS) $(LIB) -o $(NAME)
-
-# clean:
-# 		$(RM) SRC/$(OBJS) $(BOBJS)
-# 		make clean -C libft
-
-# fclean : clean
-# 		$(RM) SRC/$(NAME)
-# 		make fclean -C libft
-
-# re : fclean all
-
-# .PHONY : all clean fclean re bonus
-
-
 CC = cc
 
 CFLAGS = -Wall -Werror -Wextra
 
 CFILES = push_swap.c\
-		check.c
+		check.c\
+		check2.c\
+		operations.c
 
 # BFILES = push_swap_bonus.c\
 

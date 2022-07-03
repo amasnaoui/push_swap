@@ -11,6 +11,7 @@ char	*merge_argvs(char **argv);
 void	duplicated_value(char	**str);
 void    check_max_min_int(char **final_tab);
 void	ft_check(int ac, char **av);
+void	ft_over(char **num);
 
 
 #endif
