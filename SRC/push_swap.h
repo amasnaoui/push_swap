@@ -12,6 +12,7 @@ void	duplicated_value(char	**str);
 void    check_max_min_int(char **final_tab);
 void	ft_check(int ac, char **av);
 void	ft_over(char **num);
+t_list  *creat_stack(char **av);
 
 
 #endif
