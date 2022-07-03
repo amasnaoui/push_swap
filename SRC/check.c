@@ -54,7 +54,7 @@ void	duplicated_value(char	**str)
 		j = i + 1;
 		while (str[j])
 		{
-			if (ft_atoi(str[i]) == ft_atoi(str[j])) // 12 15 9 12 
+			if (ft_atoi(str[i]) == ft_atoi(str[j]))
 			{
 				write(2, "Error\n", 6);
 				exit(1);
@@ -65,24 +65,48 @@ void	duplicated_value(char	**str)
 	}
 }
 
-
-void check_max_min_int(char *ag)
+void	ft_over(char **num)
 {
-	char	*merge_tab;
-	char	**final_tab;
+	int	i;
+	int	j;
+	int	n;
+
+	i = 0;
+	j = 0;
+	n = 0;
+	while (num[i])
+	{
+		while (num[i][j] != '\0')
+		{
+			if (num[i][j] == '-' || num[i][j] == '+')
+				j++;
+			while (num[i][j] == '0')
+				j++;
+			while (num[i][j])
+			{
+				j++;
+				n++;
+			}
+			if (n > 10)
+				exit(write(2, "Error\n", 6));
+		}
+		i++;
+	}
+}
+
+void check_max_min_int(char **final_tab)
+{
 	int		i;
-	long		num;
+	long	num;
 
 	i = 0;
 	num = 0;
-	merge_tab = merge_args(ag);
-	final_tab = ft_split(merge_tab, ' ');
+	ft_over(final_tab);
 	while (final_tab[i])
 	{
 		num = ft_atoi(final_tab[i]);
-		if (num > 2147483647 || num < -2147483648)
-			write(2, "Error\n", 6);
-			exit(1);
+		if (num > INT_MAX || num < INT_MIN)
+			exit(write(2, "Error\n", 6));
 		i++;
 	}
 }
