@@ -15,7 +15,7 @@ t_list *creat_stack(char **av)
     while (final_tab[++i])
     {
         element = ft_lstnew(ft_atoi(final_tab[i]));
-        ft_lstadd_front(&head, element);
+        ft_lstadd_back(&head, element);
     }
     return (head);
 }
