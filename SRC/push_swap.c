@@ -1,22 +1,29 @@
 #include "push_swap.h"
 #include <stdio.h>
+
 int main	(int ac, char **av)
 {
 	// ft_check(ac, av);
 	t_list *head;
-	t_list *second;
+	// t_list *second;
 	(void)ac;
 	head = creat_stack(av);
-	second = head;
-	int i = 0;
+	// second = head;
 
+	
+
+	// sa(second);
+
+	// while (second)
+	// {
+	// 	printf("%d ",second->content);
+	// 	head = second->next;
+	// }
+	sa(head);
 	while (head)
 	{
-		i = head->content;
-		printf("%d\n",i);
+		printf("%d ",head->content);
 		head = head->next;
 	}
-
-	printf("%d", check_if_sorted(second));
 	return (0);
 }

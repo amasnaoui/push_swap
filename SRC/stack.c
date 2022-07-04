@@ -26,6 +26,8 @@ int	check_if_sorted(t_list *stack)
 
 	num = stack->content;
 	stack = stack->next;
+    if (ft_lstsize(stack) == 1)
+        return (1);
 	while (stack != NULL)
 	{
 		if (num > stack->content)
@@ -33,5 +35,5 @@ int	check_if_sorted(t_list *stack)
 		num = stack->content;
 		stack = stack->next;
 	}
-	return (1);
+    return (1);
 }
