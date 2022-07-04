@@ -19,3 +19,19 @@ t_list *creat_stack(char **av)
     }
     return (head);
 }
+
+int	check_if_sorted(t_list *stack)
+{
+	int num;
+
+	num = stack->content;
+	stack = stack->next;
+	while (stack != NULL)
+	{
+		if (num > stack->content)
+			return (0);
+		num = stack->content;
+		stack = stack->next;
+	}
+	return (1);
+}
