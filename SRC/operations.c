@@ -35,3 +35,19 @@ void pa(t_list **stack_a, t_list **stack_b)
 		write(1, "pa\n", 3);
 	}
 }
+
+void pb(t_list **stack_a, t_list **stack_b)
+{
+    t_list	*tmp;
+	t_list	*new;
+
+	if (*stack_a)
+	{
+		tmp = (*stack_a)->next;
+		new = (*stack_a);
+		new->next = NULL;
+		ft_lstadd_front(stack_b, new);
+		(*stack_a) = tmp;
+		write(1, "pa\n", 3);
+	}
+}
