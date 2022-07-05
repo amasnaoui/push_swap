@@ -20,6 +20,6 @@ t_list  *creat_stack(char **av);
 int	    check_if_sorted(t_list *stack);
 
 //Operations
-void sa(t_list *stack_a);
+void sa(t_list **stack_a);
 
 #endif
