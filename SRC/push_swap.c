@@ -19,13 +19,15 @@ int main	(int ac, char **av)
 	// 	printf("%d ",second->content);
 	// 	head = second->next;
 	// }
-	ss(&head, &second);
+	pa(&head, &second);
+	printf("stack a => ");
 	while (head)
 	{
 		printf("%d ",head->content);
 		head = head->next;
 	}
 	printf("\n");
+	printf("stack b => ");
 	while (second)
 	{
 		printf("%d ",second->content);

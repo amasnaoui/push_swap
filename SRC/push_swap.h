@@ -24,5 +24,6 @@ void swap(t_list **stack);
 void sa(t_list **stack_a);
 void sb(t_list **stack_b);
 void ss(t_list **stack_a, t_list **stack_b);
+void pa(t_list **stack_a, t_list **stack_b);
 
 #endif
