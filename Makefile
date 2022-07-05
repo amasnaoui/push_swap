@@ -5,10 +5,11 @@ CFLAGS = -Wall -Werror -Wextra
 CFILES = push_swap.c\
 		check.c\
 		check2.c\
-		operations.c\
+		swap.c\
 		stack.c\
 		operations_help.c\
-		operations2.c
+		push.c\
+		rotate.c
 
 # BFILES = push_swap_bonus.c\
 

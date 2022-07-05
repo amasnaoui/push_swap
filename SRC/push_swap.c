@@ -19,7 +19,7 @@ int main	(int ac, char **av)
 	// 	printf("%d ",second->content);
 	// 	head = second->next;
 	// }
-	rr(&head, &second);
+	pa(&head,&second);
 	printf("stack a => ");
 	while (head)
 	{
