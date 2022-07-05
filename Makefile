@@ -9,7 +9,8 @@ CFILES = push_swap.c\
 		stack.c\
 		operations_help.c\
 		push.c\
-		rotate.c
+		rotate.c\
+		reverse_rotate.c
 
 # BFILES = push_swap_bonus.c\
 

@@ -22,3 +22,19 @@ void rotate(t_list **stack)
 	tmp->next = NULL;
 	ft_lstadd_back(stack, tmp);
 }
+
+void rev_rotate(t_list **stack)
+{
+    t_list	*tmp;
+	t_list	*last;
+
+    if (*stack)
+	{
+    tmp = (*stack);
+	last = ft_lstlast(*stack);
+	while (tmp->next->next)
+		tmp = tmp->next;
+	tmp->next = NULL;
+	ft_lstadd_front(stack, last);
+    }
+}
