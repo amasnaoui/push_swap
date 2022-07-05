@@ -8,8 +8,7 @@ void swap(t_list **stack)
         return ;
     tmp = (*stack)->next;
     (*stack)->next = (*stack)->next->next;
-    // free(stack_a->next);
-    tmp->next = (*stack); 
+    tmp->next = (*stack);
     (*stack) = tmp;
 }
 
@@ -17,6 +16,8 @@ void rotate(t_list **stack)
 {
     t_list	*tmp;
 
+	if (ft_lstsize(*stack) <= 1)
+		return ;
 	tmp = (*stack);
 	(*stack) = (*stack)->next;
 	tmp->next = NULL;
@@ -28,13 +29,13 @@ void rev_rotate(t_list **stack)
     t_list	*tmp;
 	t_list	*last;
 
-    if (*stack)
-	{
-    tmp = (*stack);
+	if (ft_lstsize(*stack) <= 1)
+		return ;
+	tmp = (*stack);
 	last = ft_lstlast(*stack);
 	while (tmp->next->next)
-		tmp = tmp->next;
+	tmp = tmp->next;
 	tmp->next = NULL;
 	ft_lstadd_front(stack, last);
-    }
 }
+

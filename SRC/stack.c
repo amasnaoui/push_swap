@@ -24,11 +24,11 @@ int	check_if_sorted(t_list *stack)
 {
 	int num;
 
-	num = stack->content;
-	stack = stack->next;
     if (ft_lstsize(stack) == 1)
         return (1);
-	while (stack != NULL)
+	num = stack->content;
+	stack = stack->next;
+	while (stack)
 	{
 		if (num > stack->content)
 			return (0);
