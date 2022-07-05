@@ -12,3 +12,13 @@ void swap(t_list **stack)
     tmp->next = (*stack); 
     (*stack) = tmp;
 }
+
+void rotate(t_list **stack)
+{
+    t_list	*tmp;
+
+	tmp = (*stack);
+	(*stack) = (*stack)->next;
+	tmp->next = NULL;
+	ft_lstadd_back(stack, tmp);
+}

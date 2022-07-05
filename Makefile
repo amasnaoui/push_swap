@@ -7,7 +7,8 @@ CFILES = push_swap.c\
 		check2.c\
 		operations.c\
 		stack.c\
-		operations_help.c
+		operations_help.c\
+		operations2.c
 
 # BFILES = push_swap_bonus.c\
 
