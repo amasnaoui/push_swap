@@ -15,16 +15,16 @@ void sa(t_list **stack_a)
     write (1, "sa\n", 3);
 }
 
-// void sb(t_list **stack_b)
-// {
-//     t_list *tmp;
+void sb(t_list **stack_b)
+{
+    t_list *tmp;
 
-//     if (ft_lstsize(*stack_b) <= 1)
-//         return ;
-//     tmp = (*stack_b)->next;
-//     (*stack_b)->next = (*stack_b)->next->next;
-//     // free(stack_a->next);
-//     tmp->next = (*stack_b); 
-//     (*stack_b) = tmp;
-//     write (1, "sb\n", 3);
-// }
+    if (ft_lstsize(*stack_b) <= 1)
+        return ;
+    tmp = (*stack_b)->next;
+    (*stack_b)->next = (*stack_b)->next->next;
+    // free(stack_a->next);
+    tmp->next = (*stack_b); 
+    (*stack_b) = tmp;
+    write (1, "sb\n", 3);
+}

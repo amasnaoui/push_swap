@@ -19,7 +19,7 @@ int main	(int ac, char **av)
 	// 	printf("%d ",second->content);
 	// 	head = second->next;
 	// }
-	sa(&head);
+	sb(&head);
 	while (head)
 	{
 		printf("%d ",head->content);

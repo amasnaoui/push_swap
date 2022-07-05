@@ -21,5 +21,6 @@ int	    check_if_sorted(t_list *stack);
 
 //Operations
 void sa(t_list **stack_a);
+void sb(t_list **stack_b);
 
 #endif
