@@ -1,13 +1,11 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory `/Users/amasnaou/Desktop/push_swap'
 make -C libft
-mkdir OBJ
-cc -c -Wall -Werror -Wextra SRC/push_swap.c -o OBJ/push_swap.o
-cc -c -Wall -Werror -Wextra SRC/check.c -o OBJ/check.o
-cc -c -Wall -Werror -Wextra SRC/check2.c -o OBJ/check2.o
+ 
 cc -c -Wall -Werror -Wextra SRC/operations.c -o OBJ/operations.o
-cc -c -Wall -Werror -Wextra SRC/stack.c -o OBJ/stack.o
-cc ./OBJ/push_swap.o ./OBJ/check.o ./OBJ/check2.o ./OBJ/operations.o ./OBJ/stack.o libft/libft.a -o push_swap
+cc -c -Wall -Werror -Wextra SRC/operations_help.c -o OBJ/operations_help.o
+cc ./OBJ/push_swap.o ./OBJ/check.o ./OBJ/check2.o ./OBJ/operations.o ./OBJ/stack.o ./OBJ/operations_help.o libft/libft.a -o push_swap
 echo "done for push_swap"
+ 
 make: Leaving directory `/Users/amasnaou/Desktop/push_swap'
  

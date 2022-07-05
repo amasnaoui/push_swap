@@ -4,11 +4,11 @@
 int main	(int ac, char **av)
 {
 	// ft_check(ac, av);
-	t_list *head;
-	// t_list *second;
 	(void)ac;
+	t_list *head;
+	t_list *second;
 	head = creat_stack(av);
-	// second = head;
+	second = creat_stack(av);
 
 	
 
@@ -19,11 +19,17 @@ int main	(int ac, char **av)
 	// 	printf("%d ",second->content);
 	// 	head = second->next;
 	// }
-	sb(&head);
+	ss(&head, &second);
 	while (head)
 	{
 		printf("%d ",head->content);
 		head = head->next;
+	}
+	printf("\n");
+	while (second)
+	{
+		printf("%d ",second->content);
+		second = second->next;
 	}
 	return (0);
 }
