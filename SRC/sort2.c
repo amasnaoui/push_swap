@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 11:12:42 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 14:09:34 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 18:50:20 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,4 +103,3 @@ void	from_six_to_ten(t_list **stack_a, t_list **stack_b)
 	while (k-- > 0)
 		pa(stack_a, stack_b);
 }
-

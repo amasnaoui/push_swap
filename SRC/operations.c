@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   operations_help.c                                  :+:      :+:    :+:   */
+/*   operations.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 09:34:59 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 09:35:00 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 18:43:55 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void swap(t_list **stack)
+void	swap(t_list **stack)
 {
-    t_list *tmp;
+	t_list	*tmp;
 
-    if (ft_lstsize(*stack) <= 1)
-        return ;
-    tmp = (*stack)->next;
-    (*stack)->next = (*stack)->next->next;
-    tmp->next = (*stack);
-    (*stack) = tmp;
+	if (ft_lstsize(*stack) <= 1)
+		return ;
+	tmp = (*stack)->next;
+	(*stack)->next = (*stack)->next->next;
+	tmp->next = (*stack);
+	(*stack) = tmp;
 }
 
-void rotate(t_list **stack)
+void	rotate(t_list **stack)
 {
-    t_list	*tmp;
+	t_list	*tmp;
 
 	if (ft_lstsize(*stack) <= 1)
 		return ;
@@ -36,9 +36,9 @@ void rotate(t_list **stack)
 	ft_lstadd_back(stack, tmp);
 }
 
-void rev_rotate(t_list **stack)
+void	rev_rotate(t_list **stack)
 {
-    t_list	*tmp;
+	t_list	*tmp;
 	t_list	*last;
 
 	if (ft_lstsize(*stack) <= 1)
@@ -50,4 +50,3 @@ void rev_rotate(t_list **stack)
 	tmp->next = NULL;
 	ft_lstadd_front(stack, last);
 }
-

@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 10:13:27 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 11:09:19 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 18:50:06 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,3 @@ void	sort_three(t_list **stack)
 	if ((*stack)->content > (*stack)->next->content)
 		sa(stack);
 }
-

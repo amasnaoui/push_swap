@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 09:35:02 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 16:53:03 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 18:46:11 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,13 @@ void	ft_sort(t_list **stack_a, t_list **stack_b, int ac)
 	}
 }
 
-int main	(int ac, char **av)
+int	main(int ac, char **av)
 {
-	t_list	*stack_a = NULL;
-	t_list	*stack_b = NULL;
+	t_list	*stack_a;
+	t_list	*stack_b;
 
-
+	stack_a = NULL;
+	stack_b = NULL;
 	if (ac >= 2)
 	{
 		ft_check(ac, av);
@@ -53,4 +54,3 @@ int main	(int ac, char **av)
 	}
 	return (0);
 }
-
