@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 09:35:05 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 15:54:39 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 16:40:50 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "../libft/libft.h"
 
 
@@ -30,6 +31,7 @@ void	ft_over(char **num);
 //Create stack
 t_list  *creat_stack(char **av);
 int	    check_if_sorted(t_list *stack);
+void	free_tab(char	**tab);
 
 //Operations
 void swap(t_list **stack);

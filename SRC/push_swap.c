@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 09:35:02 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 15:54:23 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 16:53:03 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,43 +44,13 @@ int main	(int ac, char **av)
 	{
 		ft_check(ac, av);
 		stack_a = creat_stack(av);
+		if (!stack_a)
+			return (write(1, "allocation failure\n", 19));
 		if (check_if_sorted(stack_a))
-			return (0);
+			return (ft_lstclear(stack_a), 0);
 		ft_sort(&stack_a, &stack_b, ac);
-		while (stack_a)
-		{
-			printf("%d ",stack_a->content);
-			stack_a = stack_a->next;
-		}
+		ft_lstclear(stack_a);
 	}
 	return (0);
 }
 
-
-// int main	(int ac, char **av)
-// {
-// 	// ft_check(ac, av);
-// 	(void)ac;
-// 	t_list *head;
-// 	t_list *second;
-// 	head = creat_stack(av);
-// 	second = creat_stack(av);
-
-
-// 	sa(&head);
-// 	sb(&second);
-// 	printf("stack a => ");
-// 	while (head)
-// 	{
-// 		printf("%d ",head->content);
-// 		head = head->next;
-// 	}
-// 	printf("\n");
-// 	printf("stack b => ");
-// 	while (second)
-// 	{
-// 		printf("%d ",second->content);
-// 		second = second->next;
-// 	}
-// 	return (0);
-// }

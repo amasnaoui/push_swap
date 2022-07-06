@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 09:34:55 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 09:34:56 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 16:43:24 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ void	ft_check(int ac, char **av)
 		}
 		duplicated_value(final_tab);
 		check_max_min_int(final_tab);
+		free(merge_tab);
+		free_tab(final_tab);
 	}
 }
 
@@ -41,9 +43,9 @@ void	ft_over(char **num)
 
 	i = 0;
 	j = 0;
-	n = 0;
 	while (num[i])
 	{
+		n = 0;
 		while (num[i][j] != '\0')
 		{
 			if (num[i][j] == '-' || num[i][j] == '+')
@@ -56,13 +58,13 @@ void	ft_over(char **num)
 				n++;
 			}
 			if (n > 10)
-				exit(write(2, "Error\n", 6));
+				exit(write(2, "Error1\n", 6));
 		}
 		i++;
 	}
 }
 
-void check_max_min_int(char **final_tab)
+void	check_max_min_int(char **final_tab)
 {
 	int		i;
 	long	num;

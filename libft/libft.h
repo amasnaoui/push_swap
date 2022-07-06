@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 15:24:40 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 15:02:31 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 16:26:00 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,5 +69,6 @@ void	ft_lstdelone(t_list *lst, void (*del)(int));
 void	ft_lstclear(t_list *lst);
 void	ft_lstiter(t_list *lst, void (*f)(int));
 t_list	*ft_lstnew(int content);
+int		ft_isdigit(int c);
 
 #endif
