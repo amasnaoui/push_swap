@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 19:07:24 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 22:03:47 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 22:10:40 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,10 @@ void	instructions_list(t_list **stack_a, t_list **stack_b, char *line)
 		rrr(stack_a, stack_b);
 	else
 	{
-
+		write(2, "Error\n", 6);
+		ft_lstclear(*stack_a);
+		ft_lstclear(*stack_b);
+		exit(1);
 	}
 
 }
