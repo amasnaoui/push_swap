@@ -1,12 +1,10 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory `/Users/amasnaou/Desktop/push_swap'
 make -C libft
- 
 mkdir OBJ
 cc -c -Wall -Werror -Wextra SRC/push_swap.c -o OBJ/push_swap.o
 cc -c -Wall -Werror -Wextra SRC/check.c -o OBJ/check.o
 cc -c -Wall -Werror -Wextra SRC/check2.c -o OBJ/check2.o
- 
 cc -c -Wall -Werror -Wextra SRC/swap.c -o OBJ/swap.o
 cc -c -Wall -Werror -Wextra SRC/stack.c -o OBJ/stack.o
 cc -c -Wall -Werror -Wextra SRC/operations.c -o OBJ/operations.o
@@ -14,7 +12,8 @@ cc -c -Wall -Werror -Wextra SRC/push.c -o OBJ/push.o
 cc -c -Wall -Werror -Wextra SRC/rotate.c -o OBJ/rotate.o
 cc -c -Wall -Werror -Wextra SRC/reverse_rotate.c -o OBJ/reverse_rotate.o
 cc -c -Wall -Werror -Wextra SRC/sort1.c -o OBJ/sort1.o
-cc ./OBJ/push_swap.o ./OBJ/check.o ./OBJ/check2.o ./OBJ/swap.o ./OBJ/stack.o ./OBJ/operations.o ./OBJ/push.o ./OBJ/rotate.o ./OBJ/reverse_rotate.o ./OBJ/sort1.o libft/libft.a -o push_swap
+cc -c -Wall -Werror -Wextra SRC/sort2.c -o OBJ/sort2.o
+cc ./OBJ/push_swap.o ./OBJ/check.o ./OBJ/check2.o ./OBJ/swap.o ./OBJ/stack.o ./OBJ/operations.o ./OBJ/push.o ./OBJ/rotate.o ./OBJ/reverse_rotate.o ./OBJ/sort1.o ./OBJ/sort2.o libft/libft.a -o push_swap
 echo "done for push_swap"
 make: Leaving directory `/Users/amasnaou/Desktop/push_swap'
  

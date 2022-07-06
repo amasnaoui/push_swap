@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 09:35:05 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 11:05:53 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 11:33:54 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,5 +50,8 @@ void rrr(t_list **stack_a, t_list **stack_b);
 //Sorting
 void	sort_two(t_list **stack);
 void	sort_three(t_list **stack);
+int		find_min(t_list *stack);
+int		ft_index(t_list *stack, int x);
+void	sort_four(t_list **stack_a, t_list **stack_b);
 
 #endif
