@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 19:07:24 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 22:10:40 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 22:26:41 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,15 @@ void	instructions_list(t_list **stack_a, t_list **stack_b, char *line)
 	else if (ft_strncmp(line, "rrr\n", 3) == 0)
 		rrr(stack_a, stack_b);
 	else
-	{
-		write(2, "Error\n", 6);
-		ft_lstclear(*stack_a);
-		ft_lstclear(*stack_b);
-		exit(1);
-	}
+		error(&stack_a, &stack_b);
+}
 
+void	error(t_list **stack_a, t_list **stack_b)
+{
+	write(2, "Error\n", 6);
+	ft_lstclear(stack_a);
+	ft_lstclear(stack_b);
+	exit(1);
 }
 
 void	final_check(t_list **stack_a, t_list **stack_b)
@@ -79,7 +81,7 @@ int	main(int ac, char **av)
 		if (!stack_a)
 			return (write(1, "allocation failure\n", 19));
 		line = get_next_line(0);
-		while(line)
+		while (line)
 		{
 			instructions_list(&stack_a, &stack_b, line);
 			free(line);

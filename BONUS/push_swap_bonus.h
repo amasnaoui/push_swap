@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 19:08:38 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 21:50:56 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 22:26:59 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,21 +48,7 @@ void	rrb(t_list **stack_b);
 void	rev_rotate(t_list **stack);
 void	rrr(t_list **stack_a, t_list **stack_b);
 void	instructions_list(t_list **stack_a, t_list **stack_b, char *line);
-
-
-//Sorting
-// void	sort_two(t_list **stack);
-// void	sort_three(t_list **stack);
-// int		find_min(t_list *stack);
-// int		ft_index(t_list *stack, int x);
-// void	sort_four(t_list **stack_a, t_list **stack_b);
-// void	sort_five(t_list **stack_a, t_list **stack_b);
-// void	from_six_to_ten(t_list **stack_a, t_list **stack_b);
-// void	ft_sort(t_list **stack_a, t_list **stack_b, int ac);
-// void	index_stack(t_list **stack);
-// void	handle_cases(t_list **stack_a, t_list **stack_b, int ac);
-// int		big_nbr(t_list *stack);
-// int		index_big_nbr(t_list *stack, int x);
-// void	repush(t_list **stack_a, t_list **stack_b);
+void	error(t_list **stack_a, t_list **stack_b);
+void	final_check(t_list **stack_a, t_list **stack_b);
 
 #endif
