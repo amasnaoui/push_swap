@@ -15,7 +15,9 @@ CFILES = push_swap.c\
 		sort2.c\
 		sort3.c
 
-# BFILES = push_swap_bonus.c\
+BFILES = push_swap_bonus.c\
+
+BFILES = push_swap_bonus.c\
 
 OFILES = $(addprefix $(OBJ_DIR)/,$(CFILES:.c=.o))
 
@@ -25,15 +27,15 @@ OBJ_DIR = ./OBJ
 
 OBJB_DIR = ./OBJB
 
-SRC_DIR = ./SRC
+SRC_DIR = ./MANDATORY
 
 BON_DIR = ./BONUS
 
 LIB = libft/libft.a
 
-INC = SRC/push_swap.h
+INC = MANDATORY/push_swap.h
 
-BINC = includes/push_swap_bonus.h
+BINC = BONUS/push_swap_bonus.h
 
 NAME = push_swap
 
