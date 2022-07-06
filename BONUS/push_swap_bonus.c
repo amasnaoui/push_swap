@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 19:07:24 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 22:26:41 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 22:33:41 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,10 @@ void	instructions_list(t_list **stack_a, t_list **stack_b, char *line)
 	else if (ft_strncmp(line, "rrr\n", 3) == 0)
 		rrr(stack_a, stack_b);
 	else
-		error(&stack_a, &stack_b);
+		error(*stack_a, *stack_b);
 }
 
-void	error(t_list **stack_a, t_list **stack_b)
+void	error(t_list *stack_a, t_list *stack_b)
 {
 	write(2, "Error\n", 6);
 	ft_lstclear(stack_a);

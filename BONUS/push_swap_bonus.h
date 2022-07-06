@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 19:08:38 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 22:26:59 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 22:33:10 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	rrb(t_list **stack_b);
 void	rev_rotate(t_list **stack);
 void	rrr(t_list **stack_a, t_list **stack_b);
 void	instructions_list(t_list **stack_a, t_list **stack_b, char *line);
-void	error(t_list **stack_a, t_list **stack_b);
+void	error(t_list *stack_a, t_list *stack_b);
 void	final_check(t_list **stack_a, t_list **stack_b);
 
 #endif
