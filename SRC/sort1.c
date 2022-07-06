@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
+/*   sort_two.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/16 23:13:25 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 09:58:44 by amasnaou         ###   ########.fr       */
+/*   Created: 2022/07/06 10:13:27 by amasnaou          #+#    #+#             */
+/*   Updated: 2022/07/06 10:23:32 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "push_swap.h"
 
-void	ft_lstdelone(t_list *lst, void (*del)(int))
+void	sort_two(t_list **stack)
 {
-	del(lst->content);
-	free(lst);
+	sa(stack);
 }

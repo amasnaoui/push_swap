@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 09:35:02 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 09:37:32 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 10:26:20 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,14 @@ int main	(int ac, char **av)
 	{
 		ft_check(ac, av);
 		stack_a = creat_stack(av);
-		if (!check_if_sorted(stack_a))
+		if (check_if_sorted(stack_a))
 			return (0);
-		// sort
+		sort_two(&stack_a);
+		while (stack_a)
+		{
+			printf("%d ",stack_a->content);
+			stack_a = stack_a->next;
+		}
 	}
 	return (0);
 }
