@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/07/06 09:35:02 by amasnaou          #+#    #+#             */
+/*   Updated: 2022/07/06 09:37:32 by amasnaou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 #include <stdio.h>
 
@@ -5,19 +17,15 @@ int main	(int ac, char **av)
 {
 	t_list	*stack_a = NULL;
 	// t_list	*stack_b = NULL;
+
+
 	if (ac >= 2)
 	{
 		ft_check(ac, av);
 		stack_a = creat_stack(av);
-		// while (stack_a)
-		// {
-		// 	printf("%d ",stack_a->content);
-		// 	stack_a = stack_a->next;
-		// }
-		int i = check_if_sorted(stack_a);
-		if (i == 0)
-			exit(1);
-		printf("OK");
+		if (!check_if_sorted(stack_a))
+			return (0);
+		// sort
 	}
 	return (0);
 }

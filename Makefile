@@ -7,7 +7,7 @@ CFILES = push_swap.c\
 		check2.c\
 		swap.c\
 		stack.c\
-		operations_help.c\
+		operations.c\
 		push.c\
 		rotate.c\
 		reverse_rotate.c

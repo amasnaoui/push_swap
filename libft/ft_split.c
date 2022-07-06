@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amasnaou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 11:40:37 by amasnaou          #+#    #+#             */
-/*   Updated: 2021/11/08 11:40:39 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 09:37:01 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static int	countword(char const *s, char c)
