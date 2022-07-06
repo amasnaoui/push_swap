@@ -6,12 +6,11 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 09:35:02 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 18:46:11 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 20:23:11 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
 void	ft_sort(t_list **stack_a, t_list **stack_b, int ac)
 {

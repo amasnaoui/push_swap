@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amasnaou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 14:49:27 by amasnaou          #+#    #+#             */
-/*   Updated: 2021/12/05 14:49:31 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 20:31:07 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ char	*get_line(int fd, int *count, char *rest)
 		if (!rest && read_test != 0)
 			rest = ft_strdup(buffer);
 		else if (rest && read_test != 0)
-			rest = ft_strjoin(rest, buffer);
+			rest = ft_strjoin_gnl(rest, buffer);
 	}
 	free(buffer);
 	if (!read_test && rest && !*rest)

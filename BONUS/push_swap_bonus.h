@@ -6,18 +6,17 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 19:08:38 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 19:11:06 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 21:50:56 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_BONUS_H
 # define PUSH_SWAP_BONUS_H
-# define BUFFER_SIZE 1
 
 # include <unistd.h>
 # include <stdlib.h>
-# include "get_next_line.h"
 # include "../libft/libft.h"
+# include "get_next_line.h"
 
 // Parsing
 int		ft_is_valid(char c1, char c2);
@@ -48,6 +47,8 @@ void	rra(t_list **stack_a);
 void	rrb(t_list **stack_b);
 void	rev_rotate(t_list **stack);
 void	rrr(t_list **stack_a, t_list **stack_b);
+void	instructions_list(t_list **stack_a, t_list **stack_b, char *line);
+
 
 //Sorting
 // void	sort_two(t_list **stack);

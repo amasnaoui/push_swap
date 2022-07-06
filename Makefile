@@ -16,8 +16,16 @@ CFILES = push_swap.c\
 		sort3.c
 
 BFILES = push_swap_bonus.c\
-
-BFILES = push_swap_bonus.c\
+		get_next_line.c\
+		get_next_line_utils.c\
+		check_bonus.c\
+		check2_bonus.c\
+		swap_bonus.c\
+		stack_bonus.c\
+		operations_bonus.c\
+		push_bonus.c\
+		rotate_bonus.c\
+		reverse_rotate_bonus.c
 
 OFILES = $(addprefix $(OBJ_DIR)/,$(CFILES:.c=.o))
 
