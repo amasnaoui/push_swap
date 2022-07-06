@@ -8,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Wed Jul  6 11:13:07 2022
+# Make data base, printed on Wed Jul  6 13:20:45 2022
 
 # Variables
 
@@ -30,7 +30,6 @@ BINC = includes/push_swap_bonus.h
 CURDIR := /Users/amasnaou/Desktop/push_swap
 # makefile
 SHELL = /bin/sh
- 
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
@@ -46,15 +45,15 @@ VSCODE_VERBOSE_LOGGING = true
 # makefile (from `Makefile', line 5)
 CFILES = push_swap.c check.c check2.c swap.c stack.c operations.c push.c rotate.c reverse_rotate.c sort1.c sort2.c
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cc14003309/T/vscode-ipc-882a24f6-dae8-4ee2-82ee-9ad50d5e4057.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cc14003309/T/vscode-ipc-5cca8bcb-948d-4432-910a-5afd596fc1cc.sock
 # environment
 VSCODE_CWD = /
 # environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.lYOWUiKJte/Render
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.EtBnD2Hp1P/Render
 # makefile (from `Makefile', line 39)
 CHECKER = checker
 # environment
-PATH = /Users/amasnaou/goinfre/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+PATH = /Users/amasnaou/goinfre/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
@@ -66,7 +65,7 @@ LIB = libft/libft.a
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.mWj0QqNWou/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.136zpoU4Vg/Listeners
 # automatic
 %F = $(notdir $%)
 # makefile (from `Makefile', line 21)
@@ -84,7 +83,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /Users/amasnaou
 # default
-MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CODE_CACHE_PATH = /Users/amasnaou/Library/Application Support/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
 # environment
@@ -120,7 +119,7 @@ LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
-MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # makefile (from `Makefile', line 33)
 INC = SRC/push_swap.h
 # default
@@ -138,7 +137,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = com.microsoft.VSCode.1856
+XPC_SERVICE_NAME = com.microsoft.VSCode.2496
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -169,11 +168,10 @@ SUFFIXES :=
 OFILES = $(addprefix $(OBJ_DIR)/,$(CFILES:.c=.o))
 # environment
 MAKELEVEL := 0
- 
 # environment
 LANG = C
 # environment
-VSCODE_PID = 33611
+VSCODE_PID = 4065
 # variable set hash-table stats:
 # Load=80/1024=8%, Rehash=0, Collisions=6/131=5%
 
@@ -333,6 +331,7 @@ bonus: checker
 fclean: clean
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
+ 
 #  File does not exist.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 74):
@@ -482,7 +481,6 @@ push_swap: libft/libft.a OBJ/push_swap.o OBJ/check.o OBJ/check2.o OBJ/swap.o OBJ
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
- 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/2=0%
 #  commands to execute (from `Makefile', line 42):
@@ -518,6 +516,6 @@ SRC/check2.c:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Jul  6 11:13:07 2022
+# Finished Make data base on Wed Jul  6 13:20:45 2022
 
  

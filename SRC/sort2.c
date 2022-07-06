@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 11:12:42 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 11:41:13 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 14:09:34 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,5 +75,32 @@ void	sort_five(t_list **stack_a, t_list **stack_b)
 	pb(stack_a, stack_b);
 	sort_four(stack_a, stack_b);
 	pa(stack_a, stack_b);
+}
+
+void	from_six_to_ten(t_list **stack_a, t_list **stack_b)
+{
+	int	i;
+	int	j;
+	int	x;
+	int	k;
+
+	k = 0;
+	j = ft_lstsize(*stack_a);
+	while (j-- > 5)
+	{
+		x = find_min(*stack_a);
+		i = ft_index(*stack_a, x);
+		if (i > 0 && i <= ft_lstsize(*stack_a) / 2)
+			while (x != (*stack_a)->content)
+				ra(stack_a);
+		if (i > ft_lstsize(*stack_a) / 2)
+			while (x != (*stack_a)->content)
+				rra(stack_a);
+		pb(stack_a, stack_b);
+		k++;
+	}
+	sort_five(stack_a, stack_b);
+	while (k-- > 0)
+		pa(stack_a, stack_b);
 }
 
