@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 15:24:40 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 10:02:16 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 15:02:31 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
 typedef struct s_list
 {
 	int				content;
+	int				index;
 	struct s_list	*next;
 }t_list;
 

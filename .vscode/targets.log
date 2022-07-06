@@ -8,17 +8,18 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Wed Jul  6 13:20:45 2022
+# Make data base, printed on Wed Jul  6 15:03:29 2022
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
 # environment
 VSCODE_LOG_NATIVE = false
-# makefile (from `Makefile', line 35)
+# makefile (from `Makefile', line 36)
 BINC = includes/push_swap_bonus.h
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
@@ -38,19 +39,19 @@ _ = /usr/bin/make
 CFLAGS = -Wall -Werror -Wextra
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
-# makefile (from `Makefile', line 23)
+# makefile (from `Makefile', line 24)
 OBJ_DIR = ./OBJ
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # makefile (from `Makefile', line 5)
-CFILES = push_swap.c check.c check2.c swap.c stack.c operations.c push.c rotate.c reverse_rotate.c sort1.c sort2.c
+CFILES = push_swap.c check.c check2.c swap.c stack.c operations.c push.c rotate.c reverse_rotate.c sort1.c sort2.c sort3.c
 # environment
 VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cc14003309/T/vscode-ipc-5cca8bcb-948d-4432-910a-5afd596fc1cc.sock
 # environment
 VSCODE_CWD = /
 # environment
 Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.EtBnD2Hp1P/Render
-# makefile (from `Makefile', line 39)
+# makefile (from `Makefile', line 40)
 CHECKER = checker
 # environment
 PATH = /Users/amasnaou/goinfre/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki
@@ -60,7 +61,7 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
-# makefile (from `Makefile', line 31)
+# makefile (from `Makefile', line 32)
 LIB = libft/libft.a
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
@@ -68,13 +69,13 @@ LIB = libft/libft.a
 SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.136zpoU4Vg/Listeners
 # automatic
 %F = $(notdir $%)
-# makefile (from `Makefile', line 21)
+# makefile (from `Makefile', line 22)
 BOFILES = $(addprefix $(OBJB_DIR)/,$(BFILES:.c=.o))
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
 PWD = /Users/amasnaou/Desktop/push_swap
-# makefile (from `Makefile', line 25)
+# makefile (from `Makefile', line 26)
 OBJB_DIR = ./OBJB
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
@@ -112,7 +113,7 @@ MAKE_VERSION := 3.81
 USER = amasnaou
 # makefile
 .DEFAULT_GOAL := push_swap
-# makefile (from `Makefile', line 37)
+# makefile (from `Makefile', line 38)
 NAME = push_swap
 # environment
 LESS = -R
@@ -120,7 +121,7 @@ LESS = -R
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
-# makefile (from `Makefile', line 33)
+# makefile (from `Makefile', line 34)
 INC = SRC/push_swap.h
 # default
 .VARIABLES := 
@@ -142,7 +143,7 @@ XPC_SERVICE_NAME = com.microsoft.VSCode.2496
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
-# makefile (from `Makefile', line 29)
+# makefile (from `Makefile', line 30)
 BON_DIR = ./BONUS
 # environment
 __CF_USER_TEXT_ENCODING = 0x18C09:0x0:0x0
@@ -150,7 +151,7 @@ __CF_USER_TEXT_ENCODING = 0x18C09:0x0:0x0
 MAKEFILES := 
 # environment
 HOMEBREW_NO_AUTO_UPDATE = 1
-# makefile (from `Makefile', line 27)
+# makefile (from `Makefile', line 28)
 SRC_DIR = ./SRC
 # automatic
 <F = $(notdir $<)
@@ -164,7 +165,7 @@ LC_ALL = C
 SUFFIXES := 
 # default
 .INCLUDE_DIRS = /usr/local/include
-# makefile (from `Makefile', line 19)
+# makefile (from `Makefile', line 20)
 OFILES = $(addprefix $(OBJ_DIR)/,$(CFILES:.c=.o))
 # environment
 MAKELEVEL := 0
@@ -196,7 +197,7 @@ OBJ/operations.o: SRC/operations.c SRC/push_swap.h | OBJ
 #  Implicit/static pattern stem: `operations'
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 54):
+#  commands to execute (from `Makefile', line 55):
 	@$(CC) -c $(CFLAGS) $< -o $@
 	
 
@@ -211,7 +212,7 @@ OBJ/push_swap.o: SRC/push_swap.c SRC/push_swap.h | OBJ
 #  Implicit/static pattern stem: `push_swap'
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 54):
+#  commands to execute (from `Makefile', line 55):
 	@$(CC) -c $(CFLAGS) $< -o $@
 	
 
@@ -247,7 +248,7 @@ OBJ/sort1.o: SRC/sort1.c SRC/push_swap.h | OBJ
 #  Implicit/static pattern stem: `sort1'
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 54):
+#  commands to execute (from `Makefile', line 55):
 	@$(CC) -c $(CFLAGS) $< -o $@
 	
 
@@ -266,7 +267,7 @@ SRC/sort1.c:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-06 11:13:06
+#  Last modified 2022-07-06 15:03:25
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -276,7 +277,7 @@ OBJ:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 51):
+#  commands to execute (from `Makefile', line 52):
 	@mkdir OBJ
 	
 
@@ -304,7 +305,7 @@ libft/libft.a: force
 # ? := force
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/10=10%
-#  commands to execute (from `Makefile', line 46):
+#  commands to execute (from `Makefile', line 47):
 	@make -C libft
 	
 
@@ -313,7 +314,7 @@ OBJ/sort2.o: SRC/sort2.c SRC/push_swap.h | OBJ
 #  Implicit/static pattern stem: `sort2'
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 54):
+#  commands to execute (from `Makefile', line 55):
 	@$(CC) -c $(CFLAGS) $< -o $@
 	
 
@@ -331,10 +332,10 @@ bonus: checker
 fclean: clean
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
- 
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 74):
+ 
+#  commands to execute (from `Makefile', line 75):
 	@rm -rf $(NAME) $(CHECKER)
 	@make fclean -C libft
 	
@@ -344,7 +345,7 @@ OBJ/swap.o: SRC/swap.c SRC/push_swap.h | OBJ
 #  Implicit/static pattern stem: `swap'
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 54):
+#  commands to execute (from `Makefile', line 55):
 	@$(CC) -c $(CFLAGS) $< -o $@
 	
 
@@ -359,7 +360,7 @@ OBJ/reverse_rotate.o: SRC/reverse_rotate.c SRC/push_swap.h | OBJ
 #  Implicit/static pattern stem: `reverse_rotate'
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 54):
+#  commands to execute (from `Makefile', line 55):
 	@$(CC) -c $(CFLAGS) $< -o $@
 	
 
@@ -382,7 +383,7 @@ OBJ/stack.o: SRC/stack.c SRC/push_swap.h | OBJ
 #  Implicit/static pattern stem: `stack'
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 54):
+#  commands to execute (from `Makefile', line 55):
 	@$(CC) -c $(CFLAGS) $< -o $@
 	
 
@@ -397,7 +398,7 @@ OBJ/check.o: SRC/check.c SRC/push_swap.h | OBJ
 #  Implicit/static pattern stem: `check'
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 54):
+#  commands to execute (from `Makefile', line 55):
 	@$(CC) -c $(CFLAGS) $< -o $@
 	
 
@@ -418,7 +419,7 @@ OBJ/push.o: SRC/push.c SRC/push_swap.h | OBJ
 #  Implicit/static pattern stem: `push'
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 54):
+#  commands to execute (from `Makefile', line 55):
 	@$(CC) -c $(CFLAGS) $< -o $@
 	
 
@@ -432,7 +433,7 @@ checker: libft/libft.a
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 60):
+#  commands to execute (from `Makefile', line 61):
 	@$(CC) $(BOFILES) $(LIB) -o $(CHECKER)
 	@echo "done for checker"
 	
@@ -447,7 +448,7 @@ OBJB:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 64):
+#  commands to execute (from `Makefile', line 65):
 	@mkdir OBJB
 	
 
@@ -456,7 +457,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 70):
+#  commands to execute (from `Makefile', line 71):
 	@rm -rf $(OBJ_DIR) $(OBJB_DIR)
 	@make clean -C libft
 	
@@ -466,7 +467,7 @@ OBJ/rotate.o: SRC/rotate.c SRC/push_swap.h | OBJ
 #  Implicit/static pattern stem: `rotate'
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 54):
+#  commands to execute (from `Makefile', line 55):
 	@$(CC) -c $(CFLAGS) $< -o $@
 	
 
@@ -476,24 +477,39 @@ SRC/rotate.c:
 #  Modification time never checked.
 #  File has not been updated.
 
-push_swap: libft/libft.a OBJ/push_swap.o OBJ/check.o OBJ/check2.o OBJ/swap.o OBJ/stack.o OBJ/operations.o OBJ/push.o OBJ/rotate.o OBJ/reverse_rotate.o OBJ/sort1.o OBJ/sort2.o
+push_swap: libft/libft.a OBJ/push_swap.o OBJ/check.o OBJ/check2.o OBJ/swap.o OBJ/stack.o OBJ/operations.o OBJ/push.o OBJ/rotate.o OBJ/reverse_rotate.o OBJ/sort1.o OBJ/sort2.o OBJ/sort3.o
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/2=0%
-#  commands to execute (from `Makefile', line 42):
+#  commands to execute (from `Makefile', line 43):
 	@$(CC) $(OFILES) $(LIB) -o $(NAME)
 	@echo "done for push_swap"
 	
+
+OBJ/sort3.o: SRC/sort3.c SRC/push_swap.h | OBJ
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `sort3'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 55):
+	@$(CC) -c $(CFLAGS) $< -o $@
+	
+
+# Not a target:
+SRC/sort3.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 OBJ/check2.o: SRC/check2.c SRC/push_swap.h | OBJ
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `check2'
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 54):
+#  commands to execute (from `Makefile', line 55):
 	@$(CC) -c $(CFLAGS) $< -o $@
 	
 
@@ -504,7 +520,7 @@ SRC/check2.c:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=38/1024=4%, Rehash=0, Collisions=0/108=0%
+# Load=40/1024=4%, Rehash=0, Collisions=0/114=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -516,6 +532,6 @@ SRC/check2.c:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Jul  6 13:20:45 2022
+# Finished Make data base on Wed Jul  6 15:03:29 2022
 
  

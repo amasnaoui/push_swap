@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 09:35:05 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 13:59:27 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/06 15:54:39 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,11 @@ int		ft_index(t_list *stack, int x);
 void	sort_four(t_list **stack_a, t_list **stack_b);
 void	sort_five(t_list **stack_a, t_list **stack_b);
 void	from_six_to_ten(t_list **stack_a, t_list **stack_b);
+void	ft_sort(t_list **stack_a, t_list **stack_b, int ac);
+void	index_stack(t_list **stack);
+void	handle_cases(t_list **stack_a, t_list **stack_b, int ac);
+int		big_nbr(t_list *stack);
+int		index_big_nbr(t_list *stack, int x);
+void	repush(t_list **stack_a, t_list **stack_b);
 
 #endif

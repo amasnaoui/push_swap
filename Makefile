@@ -12,7 +12,8 @@ CFILES = push_swap.c\
 		rotate.c\
 		reverse_rotate.c\
 		sort1.c\
-		sort2.c
+		sort2.c\
+		sort3.c
 
 # BFILES = push_swap_bonus.c\
 
