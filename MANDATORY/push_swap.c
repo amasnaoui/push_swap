@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 09:35:02 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 20:23:11 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/07 14:03:37 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	main(int ac, char **av)
 
 	stack_a = NULL;
 	stack_b = NULL;
-	if (ac >= 2)
+	if (ac > 1)
 	{
 		ft_check(ac, av);
 		stack_a = creat_stack(av);
@@ -53,3 +53,4 @@ int	main(int ac, char **av)
 	}
 	return (0);
 }
+

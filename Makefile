@@ -50,7 +50,7 @@ NAME = push_swap
 CHECKER = checker
 
 $(NAME) : $(LIB) $(OFILES)
-	@$(CC) $(OFILES) $(LIB) -o $(NAME)
+	@$(CC) $(OFILES) -fsanitize=address $(LIB) -o $(NAME)
 	@echo "done for push_swap"
 
 $(LIB): force

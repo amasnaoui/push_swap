@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 19:08:38 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 22:33:10 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/07 14:10:31 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void	duplicated_value(char	**str);
 void	check_max_min_int(char **final_tab);
 void	ft_check(int ac, char **av);
 void	ft_over(char **num);
+int		arg_with_space(char	*tab);
 
 //Create stack
 t_list	*creat_stack(char **av);

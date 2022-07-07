@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 09:34:47 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 21:45:38 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/07 14:10:15 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,20 @@ char	*merge_argvs(char **argv)
 	char	*tab;
 
 	i = 1;
+	if (argv[i][0] == '\0')
+		exit(write(2, "Error\n", 6));
 	tab = ft_strdup(argv[i]);
 	while (argv[++i])
 	{
+		if (arg_with_space(argv[i - 1]) == 0 && arg_with_space(argv[i]) == 0)
+		{
+			if (argv[i][0] == '\0')
+				exit(write(2, "Error\n", 6));
 			tab = ft_strjoin(tab, " ");
 			tab = ft_strjoin(tab, argv[i]);
+		}
+		else
+			exit(write(2, "Error\n", 6));
 	}
 	return (tab);
 }
@@ -75,4 +84,18 @@ void	duplicated_value(char	**str)
 		}
 		i++;
 	}
+}
+
+int	arg_with_space(char	*tab)
+{
+	int	i;
+
+	i = 0;
+	while (tab[i])
+	{
+		if (tab[i] != 32)
+			return (0);
+		i++;
+	}
+	return (1);
 }
