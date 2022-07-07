@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 09:34:55 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/07 14:03:56 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/07 16:38:35 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,8 @@ void	ft_check(int ac, char **av)
 	char	*merge_tab;
 	char	**final_tab;
 	int		i;
-	int		j;
 
 	i = 0;
-	j = 0;
 	if (ac > 1)
 	{
 		merge_tab = merge_argvs(av);
