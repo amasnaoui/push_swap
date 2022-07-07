@@ -49,8 +49,8 @@ NAME = push_swap
 
 CHECKER = checker
 
-$(NAME) : $(LIB) $(OFILES)
-	@$(CC) $(OFILES) -fsanitize=address $(LIB) -o $(NAME)
+$(NAME) : $(OBJ_DIR) $(LIB) $(OFILES)
+	@$(CC) $(OFILES) $(LIB) -o $(NAME)
 	@echo "done for push_swap"
 
 $(LIB): force
@@ -61,20 +61,20 @@ force:
 $(OBJ_DIR) :
 	@mkdir OBJ
 
-$(OFILES) : $(OBJ_DIR)/%.o : $(SRC_DIR)/%.c $(INC) | $(OBJ_DIR)
+$(OFILES) : $(OBJ_DIR)/%.o : $(SRC_DIR)/%.c $(INC)
 	@$(CC) -c $(CFLAGS) $< -o $@
 
 
 bonus : $(CHECKER)
 
-$(CHECKER) : $(LIB) $(BOFILES)
+$(CHECKER) : $(OBJB_DIR) $(LIB) $(BOFILES)
 	@$(CC) $(BOFILES) $(LIB) -o $(CHECKER)
 	@echo "done for checker"
 
 $(OBJB_DIR) :
 	@mkdir OBJB
 
-$(BOFILES) : $(OBJB_DIR)/%.o : $(BON_DIR)/%.c $(BINC) | $(OBJB_DIR)
+$(BOFILES) : $(OBJB_DIR)/%.o : $(BON_DIR)/%.c $(BINC)
 	@$(CC) -c $(CFLAGS) $< -o $@
 
 clean :

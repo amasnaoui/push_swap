@@ -6,7 +6,7 @@
 /*   By: amasnaou <amasnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 19:07:24 by amasnaou          #+#    #+#             */
-/*   Updated: 2022/07/06 22:33:41 by amasnaou         ###   ########.fr       */
+/*   Updated: 2022/07/07 14:21:02 by amasnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void	error(t_list *stack_a, t_list *stack_b)
 
 void	final_check(t_list **stack_a, t_list **stack_b)
 {
-	if (check_if_sorted(*stack_a))
+	if (check_if_sorted(*stack_a) && ft_lstsize((*stack_b)) == 0)
 	{
 		ft_lstclear(*stack_a);
 		ft_lstclear(*stack_b);
